@@ -18,7 +18,7 @@ var container = document.querySelector(".anime-container");
 var l = 50;
 
 for (var i = 0; i <= l; i += 1) {
-  var x = anime.random(0, 1300);
+  var x = anime.random(0, 100);
   var y = 1000;
 
   var n = 1;
@@ -33,7 +33,7 @@ for (var i = 0; i <= l; i += 1) {
     dot.style.width = size + "px";
     dot.style.height = size + "px";
    
-    dot.style.left = x + anime.random(-15, 15) + "px";
+    dot.style.left = x + "vw";
     dot.style.top = y + anime.random(-15, 15) + "px";
   
   
@@ -48,14 +48,14 @@ anime({
   translateY: {
     value: -1100,
     
-    duration: 1500,
+    duration: 2000,
     delay: anime.stagger(150)
   }
 });
 
 
 for (var i = 0; i <= l; i += 1) {
-  var x = anime.random(0, 1300);
+  var x = anime.random(0, 100);
   var y = 1000;
 
   var n = 1;
@@ -70,7 +70,7 @@ for (var i = 0; i <= l; i += 1) {
     dot.style.width = size + "px";
     dot.style.height = size + "px";
    
-    dot.style.left = x + anime.random(-15, 15) + "px";
+    dot.style.left = x + "vw";
     dot.style.top = y + anime.random(-15, 15) + "px";
   
   
@@ -85,7 +85,7 @@ anime({
   translateY: {
     value: -1100,
     
-    duration: 2000,
+    duration: 1500,
     delay: anime.stagger(100)
   }
 });
